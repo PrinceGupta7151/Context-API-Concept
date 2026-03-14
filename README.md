@@ -21,6 +21,7 @@ This project explains how to create context, provide values, and consume data ac
 🔹 Beginner friendly React state management
 
 🧠 Concepts Covered
+
 🔹 1. createContext()
 
 Creates a new context object to share data globally.
@@ -28,6 +29,8 @@ Creates a new context object to share data globally.
 import { createContext } from "react";
 
 export const MyContext = createContext();
+
+
 🔹 2. Context Provider
 
 The Provider makes the context data available to all child components.
@@ -35,6 +38,8 @@ The Provider makes the context data available to all child components.
 <MyContext.Provider value={value}>
     <Component />
 </MyContext.Provider>
+
+
 🔹 3. useContext Hook
 
 useContext() allows functional components to consume context values easily.
@@ -43,6 +48,8 @@ import { useContext } from "react";
 import { MyContext } from "./Context";
 
 const data = useContext(MyContext);
+
+
 📂 Project Structure
 src
 │
